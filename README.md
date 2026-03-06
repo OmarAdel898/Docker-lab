@@ -93,3 +93,67 @@ Deploy a MySQL database called `app-database` with the following requirements:
 ![Testing step 2](image-16.png)
 
 ---
+# lab2
+## Problem 1: Docker Named Volumes
+
+### Volumes Configuration
+- **Volume1**: for containing static html file
+- **Volume2**: for containing nginx configuration
+
+![alt text](image-17.png)
+
+![alt text](image-18.png)
+
+## Steps
+
+### 1. Edit the html content
+
+![alt text](image-19.png)
+
+### 2. Remove the container
+
+![alt text](image-20.png)
+
+### 3. Run a new 2 containers with the following:
+
+- Attach the two volumes that were attached to the previous container using volume mount
+- Map port 80 to port 8080 on your host machine
+
+![alt text](image-21.png)
+
+### 4. Access the html files from your browser
+
+**Port 8080:**
+
+![alt text](image-22.png)
+
+**Port 8081:**
+
+![alt text](image-23.png)
+
+
+---
+
+# Problem 2: Docker Bind Mounts
+
+## Objective
+Run a container Nginx with name nginx-bind-mount and attach 2 volumes using bind mount under any paths
+
+![alt text](image-24.png)
+
+## Steps
+
+### 1. Remove the container
+
+![alt text](image-25.png)
+
+### 2. Run a new container with the following:
+
+- Attach the two volumes that were attached to the previous container
+
+![alt text](image-26.png)
+
+- Check the old data in the new containers
+
+![alt text](image-27.png)
+
