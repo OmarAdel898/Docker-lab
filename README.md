@@ -157,3 +157,29 @@ Run a container Nginx with name nginx-bind-mount and attach 2 volumes using bind
 
 ![alt text](image-27.png)
 
+
+
+
+## Task
+
+### 1. Create the Networks
+
+![Networks configuration](<Screenshot 2026-03-08 221128.png>)
+
+### 2. Create the Nginx Container
+
+![Nginx container creation](image-32.png)
+
+### 3. Create the Flask App Container (The Bridge)
+
+![Flask app container creation](image-34.png)
+
+### 4. Create the MariaDB Container
+
+![MariaDB container creation](image-33.png)
+
+### 5. Verification (The Curl Test)
+
+![Curl test result 1](image-38.png)
+
+![Curl test result 2](image-39.png)
